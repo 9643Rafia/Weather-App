@@ -1,0 +1,147 @@
+body 
+{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    /* flex-wrap: nowrap;
+    flex-direction: row; */
+}
+
+:root 
+{
+    --white: #ffffff;
+    --off-white: #e5e5e5;
+    --transp-white-1: rgba(255, 255, 255, 0.25);
+    --transp-white-2: rgba(255, 255, 255, 0.1);
+    --blue-1: #62b8f5;
+    --blue-2: #4475ef;
+    --shadow: rgba(3, 46, 87, 0.2);
+}
+
+h1
+{
+    text-align: center;
+    color: #23245ad3;
+}
+
+.sub_body
+{
+    background-color: rgba(168, 189, 252, 0.274);
+    padding: 20px 220px 20px 220px;
+    border-radius: 22.6px;
+    justify-content: center;
+    /* box-shadow: 15%; */
+    /* display: inline-block; */
+    /* position: fixed; */
+}
+
+.cityInput
+{
+    width: calc(100% - 70px);
+    padding: 13px;
+    display: inline-block;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #6b696962;
+    color:#ffffff;
+}
+
+.cityInput:focus
+{
+    outline: none;
+}
+
+.cityInput::after
+{
+    background: none;
+}
+
+.cityInput::placeholder
+{
+    color: #ffffff;
+}
+
+button[type="submit"] 
+{
+    /* width: 70px; */
+    width: calc(100% - 190px);
+    padding: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #23245ad3;
+    color: #fff;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button img
+{
+    width:26px;
+}
+
+button:hover 
+{
+    background-color: #799efc;
+}
+
+.name-icon-container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px -20px 0px;
+}
+
+h4
+{
+    text-align: center;
+    margin-bottom: 5px;
+    color:#23245ad3;
+    text-transform: uppercase;
+}
+
+hr 
+{
+    border: none;
+    border-top: 1px solid var(--white);
+    margin-top: 23px;
+}
+
+.weather-data-container
+{
+    text-align: justify;
+    /* padding: 10px 0px 0px 0px; */
+    margin-left:25px;
+    color:#23245ad3;
+    text-transform: uppercase;
+}
+
+.weather-data-container p
+{
+    margin-right: 10px;
+    line-height: 30px;
+}
+
+footer {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    width: 44%;
+    border-radius: 10px;
+}
+
+footer p {
+    font-size: small;
+    font-weight: 100;
+    color:#fff;
+}
